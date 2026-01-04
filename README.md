@@ -1,29 +1,18 @@
 # my-fancy-border-radius
+通过界面控件实时修改元素的 border-radius，并查看不同圆角效果的实时预览。
 
-This template should help get you started developing with Vue 3 in Vite.
+## 在线 Demo
+https://jin0970.github.io/my-fancy-border-radius/
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Run
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
