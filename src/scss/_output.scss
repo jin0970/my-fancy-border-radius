@@ -1,0 +1,40 @@
+.output {
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 30px auto;
+  display: flex;
+
+  &__label {
+    color: rgba(white, 0.9);
+    vertical-align: bottom;
+  }
+
+  &__code {
+    font-family: 'Ubuntu Mono', monospace;
+    color: #000022;
+    background: #ccc;
+    border-radius: 2px 0 0 2px;
+    margin-left: 10px;
+    padding: 0.5em 0.625em;
+    vertical-align: middle;
+
+  }
+
+  &__button {
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 0 2px 2px 0;
+    background: #FF0099;
+    border: none;
+    color: rgba(white, 0.9);
+    font-weight: bold;
+    transition: background 0.3s ease-out;
+    will-change: background;
+    cursor: pointer;
+    padding: 0.51em;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    &:hover {
+      background: #3023AE;
+    }
+  }
+}

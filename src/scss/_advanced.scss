@@ -1,0 +1,105 @@
+.advanced {
+  width: 90%;
+  max-width: 39rem;
+  text-align: left;
+  margin: 0.5em auto;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(white, 0.9);
+
+  font-size: 1.5rem;
+
+  &__switch {
+    padding: 0.5em 0;
+    flex-shrink: 0;
+    margin-bottom: 0.5em;
+  }
+
+  &__settings {
+    display: none;
+
+    &.visible {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  &__check {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    border: none;
+  }
+  .input-group {
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: space-between;
+    display: flex;
+
+    label {
+      display: block;
+      margin-right: 0.5em;
+    }
+    input[type="number"] {
+      width: 4.5rem;
+    }
+  }
+  &__check:checked + .advanced__trigger {
+    span:after {
+      background: #FF0099;
+      left: 1.15 * 1em;
+      border-radius: 37% 63% 55% 45% / 25% 50% 50% 75%;
+    }
+  }
+
+  &__trigger {
+    display: block;
+    line-height: 1;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      width: 2em;
+      height: 1em;
+      border-radius: 0.5em;
+      background: rgba(white, 0.8);
+      vertical-align: bottom;
+      position: relative;
+      margin-left: 2rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0.7em;
+        height: 0.7em;
+        border-radius: 50% 56% 29% 70% / 50% 73% 38% 50% ;
+        background: #000022;
+        left: .15em;
+        top: .15em;
+        transition: left 0.3s ease-out, background 0.3s ease-out, border-radius 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+.input-group {
+  input {
+    border-radius: 2px;
+    border: none;
+    background: white;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #000022;
+    padding: 0.5em 0.625em;
+  }
+
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
